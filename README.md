@@ -1,6 +1,11 @@
+# MKTFHE-op
+Multi-key fully homomorphic encryption scheme MKTFHE was proposed in 2019, which can support NAND gate. Although it is Turing complete, it requires effective and user-friendly encapsulation of NAND gate to further support addition and multiplication operations. This paper design and implement addition and multiplication operations on positive and negative integers accurately.
+
+Specifically,we expand the binary bootstrappedNANDgate inMKTFHE to other basic bootstrapped gates (AND, OR, XOR, and NOT) with the same efficiency as that of the NAND gate. Then construct one k-bit complement adder and one k-bit complement multiplier based on our basic binary bootstrapped gates. The adder and multiplier created can perform addition and multiplication on both positive and negative integers. Experiment shows that the cost of the adder grows linearly with the bits of input numbers while the cost of the multiplier grows quadratically.
+
+
 # MK-TFHE
 Multi-Key Homomophic Encryption from TFHE
-
 
 MK-TFHE is a **proof-of-concept** implementation of a multi-key version of TFHE. The code is written on top of the TFHE library (https://tfhe.github.io/tfhe/). 
 
